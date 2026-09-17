@@ -24,4 +24,3 @@ func minSubArrayLen(target int, nums []int) int {
 	}
 	return min_length
 }
-

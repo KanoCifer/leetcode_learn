@@ -1,7 +1,7 @@
 package leetcodelearn
 
 func search(nums []int, target int) int {
-	left, right := 0, len(nums) +1
+	left, right := 0, len(nums)+1
 	mid := (left + right) / 2
 	for left < right {
 		if nums[mid] == target {

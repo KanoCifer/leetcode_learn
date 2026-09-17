@@ -15,15 +15,15 @@ type ListNode struct {
 
 // 复制链表
 func reverseList(head *ListNode) *ListNode {
-    var cur *ListNode
-    for head != nil {
-        cur = &ListNode{
-            Val:  head.Val,
-            Next: cur,
-        }
-        head = head.Next
-    }
-    return cur
+	var cur *ListNode
+	for head != nil {
+		cur = &ListNode{
+			Val:  head.Val,
+			Next: cur,
+		}
+		head = head.Next
+	}
+	return cur
 }
 
 // 原地操作
