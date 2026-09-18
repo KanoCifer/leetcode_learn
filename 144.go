@@ -21,7 +21,6 @@ func preorderTraversal(root *TreeNode) []int {
 	return result
 }
 
-
 func inorderTraversal(root *TreeNode) []int {
 	result := []int{}
 	var fn func(node *TreeNode)
@@ -51,5 +50,3 @@ func postorderTraversal(root *TreeNode) []int {
 	fn(root)
 	return result
 }
-
-

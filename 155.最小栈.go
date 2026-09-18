@@ -2,14 +2,14 @@ package leetcodelearn
 
 type MinStack struct {
 	stack []int
-	min []int
+	min   []int
 }
 
 func Constructor() MinStack {
-    return MinStack{
-        stack: []int{},
-        min:   []int{},
-    }
+	return MinStack{
+		stack: []int{},
+		min:   []int{},
+	}
 }
 
 func (this *MinStack) Push(value int) {
@@ -21,7 +21,7 @@ func (this *MinStack) Push(value int) {
 }
 
 func (this *MinStack) Pop() {
-	if len(this.stack) == 0{
+	if len(this.stack) == 0 {
 		return
 	}
 	if len(this.min) == 0 {
