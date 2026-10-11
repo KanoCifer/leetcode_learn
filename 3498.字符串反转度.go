@@ -5,10 +5,9 @@ func reverseDegree(s string) int {
 	str := []rune(s)
 	n := len(str)
 
-
-	for i := 0; i < n ;i++ {
-		num := int('z' - str[i] + 1 )
-		result += num* (i+1)
+	for i := 0; i < n; i++ {
+		num := int('z' - str[i] + 1)
+		result += num * (i + 1)
 	}
 
 	return result

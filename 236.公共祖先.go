@@ -4,7 +4,7 @@ func lowestCommonAncestor(root, p, q *TreeNode) *TreeNode {
 
 	var dfs func(root *TreeNode) (bool, bool, *TreeNode)
 
-	dfs = func(root *TreeNode) (bool, bool, *TreeNode){
+	dfs = func(root *TreeNode) (bool, bool, *TreeNode) {
 		// 边界判断
 		if root == nil {
 			return false, false, nil
@@ -24,7 +24,6 @@ func lowestCommonAncestor(root, p, q *TreeNode) *TreeNode {
 		} else if has_p && has_q {
 			x = root
 		}
-
 
 		return has_p, has_q, x
 	}
